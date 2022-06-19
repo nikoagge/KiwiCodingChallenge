@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17BE61B5285E2B22009BC714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B4285E2B22009BC714 /* AppDelegate.swift */; };
-		17BE61B9285E2B22009BC714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B8285E2B22009BC714 /* ViewController.swift */; };
-		17BE61BC285E2B22009BC714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BE61BA285E2B22009BC714 /* Main.storyboard */; };
+		17BE61B9285E2B22009BC714 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B8285E2B22009BC714 /* HomeViewController.swift */; };
 		17BE61BE285E2B23009BC714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BE61BD285E2B23009BC714 /* Assets.xcassets */; };
 		17BE61C1285E2B23009BC714 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BE61BF285E2B23009BC714 /* LaunchScreen.storyboard */; };
 		17BE61CC285E2B23009BC714 /* KiwiCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61CB285E2B23009BC714 /* KiwiCodingChallengeTests.swift */; };
@@ -37,8 +36,7 @@
 /* Begin PBXFileReference section */
 		17BE61B1285E2B22009BC714 /* KiwiCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BE61B4285E2B22009BC714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17BE61B8285E2B22009BC714 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17BE61BB285E2B22009BC714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17BE61B8285E2B22009BC714 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		17BE61BD285E2B23009BC714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17BE61C0285E2B23009BC714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17BE61C2285E2B23009BC714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,8 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				17BE61B4285E2B22009BC714 /* AppDelegate.swift */,
-				17BE61B8285E2B22009BC714 /* ViewController.swift */,
-				17BE61BA285E2B22009BC714 /* Main.storyboard */,
+				17BE61B8285E2B22009BC714 /* HomeViewController.swift */,
 				17BE61BD285E2B23009BC714 /* Assets.xcassets */,
 				17BE61BF285E2B23009BC714 /* LaunchScreen.storyboard */,
 				17BE61C2285E2B23009BC714 /* Info.plist */,
@@ -230,7 +227,6 @@
 			files = (
 				17BE61C1285E2B23009BC714 /* LaunchScreen.storyboard in Resources */,
 				17BE61BE285E2B23009BC714 /* Assets.xcassets in Resources */,
-				17BE61BC285E2B22009BC714 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17BE61B9285E2B22009BC714 /* ViewController.swift in Sources */,
+				17BE61B9285E2B22009BC714 /* HomeViewController.swift in Sources */,
 				17BE61B5285E2B22009BC714 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		17BE61BA285E2B22009BC714 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17BE61BB285E2B22009BC714 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		17BE61BF285E2B23009BC714 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,7 +425,6 @@
 				INFOPLIST_FILE = KiwiCodingChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,7 +451,6 @@
 				INFOPLIST_FILE = KiwiCodingChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

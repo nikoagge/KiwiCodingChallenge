@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  KiwiCodingChallenge
 //
 //  Created by Nikos Aggelidis on 18/6/22.
@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .blue
     }
 }
