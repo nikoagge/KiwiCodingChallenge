@@ -16,6 +16,7 @@
 		174ADEEA285F16480041B3D0 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */; };
 		174ADEED285F17DE0041B3D0 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEEC285F17DE0041B3D0 /* Flight.swift */; };
 		174ADEEF285F1D3E0041B3D0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEEE285F1D3E0041B3D0 /* UIViewController+Extension.swift */; };
+		174ADEF3285F20A20041B3D0 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEF2285F20A20041B3D0 /* ReusableView.swift */; };
 		17BE61B5285E2B22009BC714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B4285E2B22009BC714 /* AppDelegate.swift */; };
 		17BE61B9285E2B22009BC714 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B8285E2B22009BC714 /* HomeViewController.swift */; };
 		17BE61BE285E2B23009BC714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BE61BD285E2B23009BC714 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 		174ADEEC285F17DE0041B3D0 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		174ADEEE285F1D3E0041B3D0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		174ADEF2285F20A20041B3D0 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		17BE61B1285E2B22009BC714 /* KiwiCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BE61B4285E2B22009BC714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17BE61B8285E2B22009BC714 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		174ADEF0285F207D0041B3D0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		174ADEF1285F208C0041B3D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				174ADEF2285F20A20041B3D0 /* ReusableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		17BE61A8285E2B22009BC714 = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +212,8 @@
 				174ADEE8285F162F0041B3D0 /* Extensions */,
 				1724B169285F06B500715A03 /* Managers */,
 				174ADEEB285F17CB0041B3D0 /* Models */,
+				174ADEF0285F207D0041B3D0 /* ViewModels */,
+				174ADEF1285F208C0041B3D0 /* Views */,
 				17BE61B8285E2B22009BC714 /* HomeViewController.swift */,
 				17BE61BD285E2B23009BC714 /* Assets.xcassets */,
 				17BE61BF285E2B23009BC714 /* LaunchScreen.storyboard */,
@@ -353,6 +372,7 @@
 				174ADEE4285F13F20041B3D0 /* KiwiRouter.swift in Sources */,
 				174ADEEF285F1D3E0041B3D0 /* UIViewController+Extension.swift in Sources */,
 				17BE61B9285E2B22009BC714 /* HomeViewController.swift in Sources */,
+				174ADEF3285F20A20041B3D0 /* ReusableView.swift in Sources */,
 				17BE61B5285E2B22009BC714 /* AppDelegate.swift in Sources */,
 				174ADEED285F17DE0041B3D0 /* Flight.swift in Sources */,
 				174ADEDD285F0B810041B3D0 /* NetworkingError.swift in Sources */,
