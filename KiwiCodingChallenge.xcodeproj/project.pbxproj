@@ -72,6 +72,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1724B166285EFC8F00715A03 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				17BE61B4285E2B22009BC714 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		17BE61A8285E2B22009BC714 = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +103,7 @@
 		17BE61B3285E2B22009BC714 /* KiwiCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				17BE61B4285E2B22009BC714 /* AppDelegate.swift */,
+				1724B166285EFC8F00715A03 /* Application */,
 				17BE61B8285E2B22009BC714 /* HomeViewController.swift */,
 				17BE61BD285E2B23009BC714 /* Assets.xcassets */,
 				17BE61BF285E2B23009BC714 /* LaunchScreen.storyboard */,
