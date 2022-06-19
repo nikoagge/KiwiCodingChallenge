@@ -15,6 +15,7 @@
 		174ADEE7285F14A10041B3D0 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE6285F14A10041B3D0 /* NetworkingManager.swift */; };
 		174ADEEA285F16480041B3D0 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */; };
 		174ADEED285F17DE0041B3D0 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEEC285F17DE0041B3D0 /* Flight.swift */; };
+		174ADEEF285F1D3E0041B3D0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEEE285F1D3E0041B3D0 /* UIViewController+Extension.swift */; };
 		17BE61B5285E2B22009BC714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B4285E2B22009BC714 /* AppDelegate.swift */; };
 		17BE61B9285E2B22009BC714 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B8285E2B22009BC714 /* HomeViewController.swift */; };
 		17BE61BE285E2B23009BC714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BE61BD285E2B23009BC714 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		174ADEE6285F14A10041B3D0 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 		174ADEEC285F17DE0041B3D0 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		174ADEEE285F1D3E0041B3D0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		17BE61B1285E2B22009BC714 /* KiwiCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BE61B4285E2B22009BC714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17BE61B8285E2B22009BC714 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		174ADEE8285F162F0041B3D0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				174ADEEE285F1D3E0041B3D0 /* UIViewController+Extension.swift */,
 				174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */,
 			);
 			path = Extensions;
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				174ADEE4285F13F20041B3D0 /* KiwiRouter.swift in Sources */,
+				174ADEEF285F1D3E0041B3D0 /* UIViewController+Extension.swift in Sources */,
 				17BE61B9285E2B22009BC714 /* HomeViewController.swift in Sources */,
 				17BE61B5285E2B22009BC714 /* AppDelegate.swift in Sources */,
 				174ADEED285F17DE0041B3D0 /* Flight.swift in Sources */,
