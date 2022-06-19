@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		174ADEDA285F099C0041B3D0 /* FlightServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADED9285F099C0041B3D0 /* FlightServiceAPI.swift */; };
+		174ADEDD285F0B810041B3D0 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEDC285F0B810041B3D0 /* NetworkingError.swift */; };
+		174ADEDF285F11C20041B3D0 /* FlightResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEDE285F11C20041B3D0 /* FlightResponse.swift */; };
+		174ADEE2285F13090041B3D0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE1285F13090041B3D0 /* Router.swift */; };
+		174ADEE4285F13F20041B3D0 /* KiwiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE3285F13F20041B3D0 /* KiwiRouter.swift */; };
+		174ADEE7285F14A10041B3D0 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE6285F14A10041B3D0 /* NetworkingManager.swift */; };
+		174ADEEA285F16480041B3D0 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */; };
+		174ADEED285F17DE0041B3D0 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEEC285F17DE0041B3D0 /* Flight.swift */; };
 		17BE61B5285E2B22009BC714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B4285E2B22009BC714 /* AppDelegate.swift */; };
 		17BE61B9285E2B22009BC714 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B8285E2B22009BC714 /* HomeViewController.swift */; };
 		17BE61BE285E2B23009BC714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BE61BD285E2B23009BC714 /* Assets.xcassets */; };
@@ -34,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		174ADED9285F099C0041B3D0 /* FlightServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightServiceAPI.swift; sourceTree = "<group>"; };
+		174ADEDC285F0B810041B3D0 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		174ADEDE285F11C20041B3D0 /* FlightResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightResponse.swift; sourceTree = "<group>"; };
+		174ADEE1285F13090041B3D0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		174ADEE3285F13F20041B3D0 /* KiwiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiRouter.swift; sourceTree = "<group>"; };
+		174ADEE6285F14A10041B3D0 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		174ADEEC285F17DE0041B3D0 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		17BE61B1285E2B22009BC714 /* KiwiCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BE61B4285E2B22009BC714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17BE61B8285E2B22009BC714 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +96,75 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		1724B169285F06B500715A03 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1724B16A285F06C400715A03 /* Networking */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1724B16A285F06C400715A03 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				174ADEE5285F14900041B3D0 /* Manager */,
+				174ADEDB285F0B700041B3D0 /* Responses */,
+				174ADEE0285F12EF0041B3D0 /* Router */,
+				1724B16B285F08F200715A03 /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1724B16B285F08F200715A03 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				174ADED9285F099C0041B3D0 /* FlightServiceAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		174ADEDB285F0B700041B3D0 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				174ADEDC285F0B810041B3D0 /* NetworkingError.swift */,
+				174ADEDE285F11C20041B3D0 /* FlightResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		174ADEE0285F12EF0041B3D0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				174ADEE3285F13F20041B3D0 /* KiwiRouter.swift */,
+				174ADEE1285F13090041B3D0 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		174ADEE5285F14900041B3D0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				174ADEE6285F14A10041B3D0 /* NetworkingManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		174ADEE8285F162F0041B3D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		174ADEEB285F17CB0041B3D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				174ADEEC285F17DE0041B3D0 /* Flight.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		17BE61A8285E2B22009BC714 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				1724B166285EFC8F00715A03 /* Application */,
+				174ADEE8285F162F0041B3D0 /* Extensions */,
+				1724B169285F06B500715A03 /* Managers */,
+				174ADEEB285F17CB0041B3D0 /* Models */,
 				17BE61B8285E2B22009BC714 /* HomeViewController.swift */,
 				17BE61BD285E2B23009BC714 /* Assets.xcassets */,
 				17BE61BF285E2B23009BC714 /* LaunchScreen.storyboard */,
@@ -259,8 +347,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				174ADEE4285F13F20041B3D0 /* KiwiRouter.swift in Sources */,
 				17BE61B9285E2B22009BC714 /* HomeViewController.swift in Sources */,
 				17BE61B5285E2B22009BC714 /* AppDelegate.swift in Sources */,
+				174ADEED285F17DE0041B3D0 /* Flight.swift in Sources */,
+				174ADEDD285F0B810041B3D0 /* NetworkingError.swift in Sources */,
+				174ADEDF285F11C20041B3D0 /* FlightResponse.swift in Sources */,
+				174ADEEA285F16480041B3D0 /* URLSession+Extension.swift in Sources */,
+				174ADEE7285F14A10041B3D0 /* NetworkingManager.swift in Sources */,
+				174ADEE2285F13090041B3D0 /* Router.swift in Sources */,
+				174ADEDA285F099C0041B3D0 /* FlightServiceAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
