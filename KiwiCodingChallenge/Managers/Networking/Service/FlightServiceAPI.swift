@@ -25,7 +25,7 @@ final class FlightService: FlightServiceDelegate {
         let format = DateFormatter()
         format.dateFormat = "dd/MM/yyyy"
         
-        guard let url = try? KiwiRouter.popularFlights(dateFrom: format.string(from: dateFrom), dateTo: format.string(from: dateTo)).asURLComponents()?.url else {
+        guard let url = try? KiwiRoute.popularFlights(dateFrom: format.string(from: dateFrom), dateTo: format.string(from: dateTo)).asURLComponents()?.url else {
             return result(.failure(NetworkingError.badRequest))
         }
         

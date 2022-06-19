@@ -10,7 +10,7 @@
 		174ADEDA285F099C0041B3D0 /* FlightServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADED9285F099C0041B3D0 /* FlightServiceAPI.swift */; };
 		174ADEDD285F0B810041B3D0 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEDC285F0B810041B3D0 /* NetworkingError.swift */; };
 		174ADEDF285F11C20041B3D0 /* FlightResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEDE285F11C20041B3D0 /* FlightResponse.swift */; };
-		174ADEE2285F13090041B3D0 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE1285F13090041B3D0 /* Router.swift */; };
+		174ADEE2285F13090041B3D0 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE1285F13090041B3D0 /* Route.swift */; };
 		174ADEE4285F13F20041B3D0 /* KiwiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE3285F13F20041B3D0 /* KiwiRouter.swift */; };
 		174ADEE7285F14A10041B3D0 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE6285F14A10041B3D0 /* NetworkingManager.swift */; };
 		174ADEEA285F16480041B3D0 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */; };
@@ -47,7 +47,7 @@
 		174ADED9285F099C0041B3D0 /* FlightServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightServiceAPI.swift; sourceTree = "<group>"; };
 		174ADEDC285F0B810041B3D0 /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
 		174ADEDE285F11C20041B3D0 /* FlightResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightResponse.swift; sourceTree = "<group>"; };
-		174ADEE1285F13090041B3D0 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		174ADEE1285F13090041B3D0 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		174ADEE3285F13F20041B3D0 /* KiwiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiwiRouter.swift; sourceTree = "<group>"; };
 		174ADEE6285F14A10041B3D0 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 			children = (
 				174ADEE5285F14900041B3D0 /* Manager */,
 				174ADEDB285F0B700041B3D0 /* Responses */,
-				174ADEE0285F12EF0041B3D0 /* Router */,
+				174ADEE0285F12EF0041B3D0 /* Routes */,
 				1724B16B285F08F200715A03 /* Service */,
 			);
 			path = Networking;
@@ -136,13 +136,13 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
-		174ADEE0285F12EF0041B3D0 /* Router */ = {
+		174ADEE0285F12EF0041B3D0 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
 				174ADEE3285F13F20041B3D0 /* KiwiRouter.swift */,
-				174ADEE1285F13090041B3D0 /* Router.swift */,
+				174ADEE1285F13090041B3D0 /* Route.swift */,
 			);
-			path = Router;
+			path = Routes;
 			sourceTree = "<group>";
 		};
 		174ADEE5285F14900041B3D0 /* Manager */ = {
@@ -379,7 +379,7 @@
 				174ADEDF285F11C20041B3D0 /* FlightResponse.swift in Sources */,
 				174ADEEA285F16480041B3D0 /* URLSession+Extension.swift in Sources */,
 				174ADEE7285F14A10041B3D0 /* NetworkingManager.swift in Sources */,
-				174ADEE2285F13090041B3D0 /* Router.swift in Sources */,
+				174ADEE2285F13090041B3D0 /* Route.swift in Sources */,
 				174ADEDA285F099C0041B3D0 /* FlightServiceAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

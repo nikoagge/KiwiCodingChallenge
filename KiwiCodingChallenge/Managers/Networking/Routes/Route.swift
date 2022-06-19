@@ -9,7 +9,7 @@ import Foundation
 
 public typealias Parameters = [String: String]
 
-protocol RouterDelegate {
+protocol RouteDelegate {
     var baseURL: String { get }
     var method: HTTPMethod { get }
     var path: String { get }
@@ -27,7 +27,7 @@ public enum HTTPMethod: String {
     case connect = "CONNECT"
 }
 
-extension RouterDelegate {
+extension RouteDelegate {
     public func asURLComponents() throws -> URLComponents? {
         guard let url = URL(string: baseURL) else { throw NetworkingError.badRequest }
         var urlComponents = URLComponents(url: url.appendingPathComponent(path), resolvingAgainstBaseURL: true)

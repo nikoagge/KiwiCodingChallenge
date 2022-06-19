@@ -7,11 +7,11 @@
 
 import Foundation
 
-public enum KiwiRouter {
+enum KiwiRoute {
     case popularFlights(dateFrom: String, dateTo: String)
 }
 
-extension KiwiRouter: RouterDelegate {
+extension KiwiRoute: RouteDelegate {
     var baseURL: String {
         return "https://api.skypicker.com"
     }
