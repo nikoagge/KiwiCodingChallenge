@@ -17,6 +17,13 @@
 		174ADEED285F17DE0041B3D0 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEEC285F17DE0041B3D0 /* Flight.swift */; };
 		174ADEEF285F1D3E0041B3D0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEEE285F1D3E0041B3D0 /* UIViewController+Extension.swift */; };
 		174ADEF3285F20A20041B3D0 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEF2285F20A20041B3D0 /* ReusableView.swift */; };
+		174ADEF6285F264C0041B3D0 /* FlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEF5285F264C0041B3D0 /* FlightViewModel.swift */; };
+		174ADEF9285F270F0041B3D0 /* FlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEF8285F270F0041B3D0 /* FlightTableViewCell.swift */; };
+		174ADEFB285F40B40041B3D0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEFA285F40B40041B3D0 /* UIView+Extension.swift */; };
+		174ADEFD285F41800041B3D0 /* FlightTableViewCell+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEFC285F41800041B3D0 /* FlightTableViewCell+UI.swift */; };
+		174ADEFF285F465F0041B3D0 /* FlightTableViewCell+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADEFE285F465F0041B3D0 /* FlightTableViewCell+Configuration.swift */; };
+		174ADF02285F5BB30041B3D0 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADF01285F5BB30041B3D0 /* UIFont+Extension.swift */; };
+		174ADF04285F75720041B3D0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174ADF03285F75720041B3D0 /* UIColor+Extension.swift */; };
 		17BE61B5285E2B22009BC714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B4285E2B22009BC714 /* AppDelegate.swift */; };
 		17BE61B9285E2B22009BC714 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BE61B8285E2B22009BC714 /* HomeViewController.swift */; };
 		17BE61BE285E2B23009BC714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BE61BD285E2B23009BC714 /* Assets.xcassets */; };
@@ -54,6 +61,13 @@
 		174ADEEC285F17DE0041B3D0 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		174ADEEE285F1D3E0041B3D0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		174ADEF2285F20A20041B3D0 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		174ADEF5285F264C0041B3D0 /* FlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightViewModel.swift; sourceTree = "<group>"; };
+		174ADEF8285F270F0041B3D0 /* FlightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTableViewCell.swift; sourceTree = "<group>"; };
+		174ADEFA285F40B40041B3D0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		174ADEFC285F41800041B3D0 /* FlightTableViewCell+UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlightTableViewCell+UI.swift"; sourceTree = "<group>"; };
+		174ADEFE285F465F0041B3D0 /* FlightTableViewCell+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FlightTableViewCell+Configuration.swift"; sourceTree = "<group>"; };
+		174ADF01285F5BB30041B3D0 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		174ADF03285F75720041B3D0 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		17BE61B1285E2B22009BC714 /* KiwiCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KiwiCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17BE61B4285E2B22009BC714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17BE61B8285E2B22009BC714 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +170,10 @@
 		174ADEE8285F162F0041B3D0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				174ADF03285F75720041B3D0 /* UIColor+Extension.swift */,
 				174ADEEE285F1D3E0041B3D0 /* UIViewController+Extension.swift */,
+				174ADEFA285F40B40041B3D0 /* UIView+Extension.swift */,
+				174ADF01285F5BB30041B3D0 /* UIFont+Extension.swift */,
 				174ADEE9285F16480041B3D0 /* URLSession+Extension.swift */,
 			);
 			path = Extensions;
@@ -173,6 +190,7 @@
 		174ADEF0285F207D0041B3D0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				174ADEF5285F264C0041B3D0 /* FlightViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -180,9 +198,29 @@
 		174ADEF1285F208C0041B3D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				174ADEF7285F26C80041B3D0 /* Custom Cells */,
+				174ADEF4285F23EE0041B3D0 /* ViewControllers */,
 				174ADEF2285F20A20041B3D0 /* ReusableView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		174ADEF4285F23EE0041B3D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17BE61B8285E2B22009BC714 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		174ADEF7285F26C80041B3D0 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				174ADEF8285F270F0041B3D0 /* FlightTableViewCell.swift */,
+				174ADEFC285F41800041B3D0 /* FlightTableViewCell+UI.swift */,
+				174ADEFE285F465F0041B3D0 /* FlightTableViewCell+Configuration.swift */,
+			);
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
 		17BE61A8285E2B22009BC714 = {
@@ -214,7 +252,6 @@
 				174ADEEB285F17CB0041B3D0 /* Models */,
 				174ADEF0285F207D0041B3D0 /* ViewModels */,
 				174ADEF1285F208C0041B3D0 /* Views */,
-				17BE61B8285E2B22009BC714 /* HomeViewController.swift */,
 				17BE61BD285E2B23009BC714 /* Assets.xcassets */,
 				17BE61BF285E2B23009BC714 /* LaunchScreen.storyboard */,
 				17BE61C2285E2B23009BC714 /* Info.plist */,
@@ -370,11 +407,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				174ADEE4285F13F20041B3D0 /* KiwiRouter.swift in Sources */,
+				174ADF04285F75720041B3D0 /* UIColor+Extension.swift in Sources */,
+				174ADEFD285F41800041B3D0 /* FlightTableViewCell+UI.swift in Sources */,
 				174ADEEF285F1D3E0041B3D0 /* UIViewController+Extension.swift in Sources */,
 				17BE61B9285E2B22009BC714 /* HomeViewController.swift in Sources */,
+				174ADEFB285F40B40041B3D0 /* UIView+Extension.swift in Sources */,
+				174ADEF6285F264C0041B3D0 /* FlightViewModel.swift in Sources */,
+				174ADF02285F5BB30041B3D0 /* UIFont+Extension.swift in Sources */,
+				174ADEFF285F465F0041B3D0 /* FlightTableViewCell+Configuration.swift in Sources */,
 				174ADEF3285F20A20041B3D0 /* ReusableView.swift in Sources */,
 				17BE61B5285E2B22009BC714 /* AppDelegate.swift in Sources */,
 				174ADEED285F17DE0041B3D0 /* Flight.swift in Sources */,
+				174ADEF9285F270F0041B3D0 /* FlightTableViewCell.swift in Sources */,
 				174ADEDD285F0B810041B3D0 /* NetworkingError.swift in Sources */,
 				174ADEDF285F11C20041B3D0 /* FlightResponse.swift in Sources */,
 				174ADEEA285F16480041B3D0 /* URLSession+Extension.swift in Sources */,
