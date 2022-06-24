@@ -15,7 +15,7 @@ private enum NetworkingErrorMessages: String {
     case simpleErrorMessage = "Error Message"
 }
 
-enum NetworkingError: Error {
+public enum NetworkingError: Error {
     case badRequest
     case notAuthenticated
     case forbidden
@@ -80,7 +80,7 @@ enum NetworkingError: Error {
 }
 
 extension NetworkingError: Equatable {
-    static func == (lhs: NetworkingError, rhs: NetworkingError) -> Bool {
+    public static func == (lhs: NetworkingError, rhs: NetworkingError) -> Bool {
         return lhs.statusCode == rhs.statusCode
     }
 }

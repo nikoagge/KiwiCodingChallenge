@@ -7,16 +7,19 @@
 
 import UIKit
 
+import UIKit
+
 public protocol HomeViewControllerDelegate: AnyObject {
     func didBookFlightButtonPressed(url: URL?)
 }
 
-final class HomeViewController: UIViewController {
+class HomeViewController: UIViewController {
+    
     let flightService: FlightService
     var viewModel: FlightViewModel?
     var indicator: UIView?
     
-    weak var homeViewControllerDelegate: HomeViewControllerDelegate?
+    weak var delegate: HomeViewControllerDelegate?
     
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
@@ -28,7 +31,10 @@ final class HomeViewController: UIViewController {
         return refreshControl
     }()
     
-    var homeTableView = UITableView.newViewSetForAutoLayout()
+    var homeView: HomeView! {
+        guard isViewLoaded else { return nil }
+        return (view as! HomeView)
+    }
     
     init(flightService: FlightService) {
         self.flightService = flightService
@@ -60,11 +66,11 @@ final class HomeViewController: UIViewController {
     }
     
     private func registerCellForReuse() {
-        homeView.tableView.register(FlightTableViewCell.nib, forCellReuseIdentifier: FlightTableViewCell.reuseIdentifier)
+        homeView.tableView.register(FlightTableViewCell.nib, forCellReuseIdentifier: FlightTableViewCell.reusableIdentifier)
     }
     
     private func requestFlightOffers() {
-        indicator = showActivityIndicatory(onView: self.view)
+        indicator = showActivityIndicatory(self.view)
         
         flightService.fetchFlights { (result) in
             switch result {
@@ -93,7 +99,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = homeView.tableView.dequeueReusableCell(withIdentifier: FlightTableViewCell.reuseIdentifier, for: indexPath) as? FlightTableViewCell else {
+        guard let cell = homeView.tableView.dequeueReusableCell(withIdentifier: FlightTableViewCell.reusableIdentifier, for: indexPath) as? FlightTableViewCell else {
             return self.tableView(tableView, cellForRowAt: indexPath)
         }
         

@@ -50,7 +50,7 @@ extension KiwiRoute: RouteDelegate {
                 "limit": "5",
                 "one_per_date": "1",
                 "one_for_city": "1",
-                "partner": "picky"
+                "partner": "skypicker"
             ]
         }
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol FlightServiceDelegate: AnyObject {
+public protocol FlightServiceDelegate: AnyObject {
     func fetchFlights(result: @escaping (Result<[Flight], NetworkingError>) -> Void)
 }
 

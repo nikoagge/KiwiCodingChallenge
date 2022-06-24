@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol NetworkingManagerDelegate: AnyObject {
+public protocol NetworkingManagerDelegate: AnyObject {
     func fetchDecodable<T: Decodable>(url: URL, decoder: JSONDecoder, onCompletion: @escaping (Result<T, NetworkingError>) -> Void)
 }
 

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Flight {
+public struct Flight {
     let from: String
     let to: String
     let price: Int
